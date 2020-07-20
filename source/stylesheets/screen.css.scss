@@ -37,9 +37,29 @@ html, body {
    -webkit-text-size-adjust: none; /* Never autoresize text */
    }
 
+html {
+   font-size: $rem-font-size;
+}
+
+body {
+   font-family: sans-serif;
+   letter-spacing: 0.005rem;
+}
+
+a, a:visited {
+   color: $content-link-color; // default, actual content is white background
+}
+
 ////////////////////////////////////////////////////////////////////////////////
 // TABLE OF CONTENTS
 ////////////////////////////////////////////////////////////////////////////////
+
+#toc {
+   a, a:visited {
+      color: $nav-link-color;
+   }
+}
+
 
 #toc > ul > li > a > span {
    float: right;
@@ -49,13 +69,8 @@ html, body {
    }
 
 @mixin embossed-bg {
-   background:
-      linear-gradient(to bottom, rgba(black, 0.2), rgba(black, 0) 8px),
-      linear-gradient(to top, rgba(black, 0.2), rgba(black, 0) 8px),
-      linear-gradient(to bottom, rgba($nav-embossed-border-top, 1), rgba($nav-embossed-border-top, 0) 1.5px),
-      linear-gradient(to top, rgba($nav-embossed-border-bottom, 1), rgba($nav-embossed-border-bottom, 0) 1.5px),
-      $nav-subitem-bg;
-   }
+   border-bottom: solid 1px #222;
+}
 
 .tocify-wrapper {
    transition: left 0.3s ease-in-out;
@@ -68,7 +83,7 @@ html, body {
    bottom: 0;
    width: $nav-width;
    background-color: $nav-bg;
-   font-size: 13px;
+   font-size: 1rem;
    font-weight: bold;
    .lang-selector {  //language selector for mobile devices
       display: none;
@@ -79,9 +94,9 @@ html, body {
       }
    &>img {  //logo at the top of the ToC
       display: block;
-      max-width: 80%;
-      max-height: 100px;
-      margin: $logo-margin auto 0px auto;
+      width: 100%;
+      height: 62px;
+      margin: 0 auto;
       }
    &>.search {
       position: relative;
@@ -91,7 +106,7 @@ html, body {
          border-color: $search-box-border-color;
          padding: 6px 0 6px 20px;
          box-sizing: border-box;
-         margin: $nav-v-padding $nav-padding;
+         margin: $nav-v-padding $nav-padding 9px;
          width: $nav-width - 30;
          outline: none;
          color: $nav-text;
@@ -155,8 +170,9 @@ html, body {
       transition: background-color 230ms linear;
       }
    .tocify-focus {  //currently selected ToC entry
-      box-shadow: 0px 1px 0px $nav-active-shadow;
-      background-color: $nav-active-bg;
+      //border-top: solid 1px #222;
+      //box-shadow: 0px 1px 0px $nav-active-shadow;
+      background-color: $nav-subitem-bg;
       color: $nav-active-text;
       }
    // Subheaders are the submenus that slide open
@@ -165,9 +181,11 @@ html, body {
       display: none; // tocify will override this when needed
       background-color: $nav-subitem-bg;
       font-weight: 500;
+      padding-bottom:0.5rem;
+      padding-top: .375rem;
       .tocify-item>a {
          padding-left: $nav-padding + $nav-indent;
-         font-size: 12px;
+         font-size: 0.9rem;
          }
       // for embossed look:
       @include embossed-bg;
@@ -176,7 +194,7 @@ html, body {
          }
       }
    .toc-footer {
-      padding: 1em 0;
+      padding: 1.5rem 0 1em 0;
       margin-top: 1em;
       border-top: 1px dashed $nav-footer-border-color;
       li,a {
@@ -191,8 +209,26 @@ html, body {
          line-height: 1.7;
          text-decoration: none;
          }
+      a {
+         color: $nav-active-bg !important;
+         }
       }
    }
+.tocify-header > .tocify-focus + .tocify-subheader {
+   margin-top: -4px;
+}
+.tocify-header > li > a {
+   line-height: 2.25rem;
+}
+.tocify-header > li.tocify-focus > a {
+   padding-top: 0.25rem;
+}
+.tocify-header > li:not(.tocify-focus) > a {
+   color: $nav-active-bg !important;
+}
+.tocify {
+   padding: 1rem 0 0.25rem;
+}
 
 // button to show navigation on mobile devices
 #nav-button {
@@ -254,9 +290,14 @@ html, body {
       z-index: 50;
       border-bottom: 5px solid $lang-select-active-bg;
       }
+
+   a, a:visited {
+      color: $nav-active-bg;
+   }
    }
 
 .lang-selector {
+   display:none !important;
    background-color: $lang-select-bg;
    width: 100%;
    font-weight: bold;
@@ -312,16 +353,20 @@ html, body {
    &>h1, &>h2, &>div {  //tocify hidden div for placeholding stuff
       clear:both;
       }
+   ul {
+      margin-top:0;
+   }
    h1 {
       @extend %header-font;
-      font-size: 30px;
-      padding-top: 0.5em;
-      padding-bottom: 0.5em;
+      // must be in pixels - must match the height of the logo img
+      font-size: 29px;
       border-bottom: 1px solid #ccc;
       margin-bottom: $h1-margin-bottom;
       margin-top: 2em;
       border-top: 1px solid #ddd;
-      background-image: linear-gradient(to bottom, #fff, #f9f9f9);
+      background-image: linear-gradient(to bottom,#fff,#f9f9f9);
+      line-height: 60px;
+      height: 64px;
       }
    h1:first-child, div:first-child + h1 {
       border-top-width: 0;
@@ -329,8 +374,7 @@ html, body {
       }
    h2 {
       @extend %header-font;
-      font-size: 20px;
-      margin-top: 4em;
+      font-size: 1.5rem;
       margin-bottom: 0;
       border-top: 1px solid #ccc;
       padding-top: 1.2em;
@@ -340,17 +384,17 @@ html, body {
    // h2s right after h1s should bump right up
    // against the h1s.
    h1 + h2, h1 + div + h2 {
-      margin-top: $h1-margin-bottom * -1;
+      margin-top: -$h1-margin-bottom;
       border-top: none;
       }
    h3, h4, h5, h6 {
       @extend %header-font;
-      font-size: 15px;
+      font-size: 1rem;
       margin-top: 2.5em;
       margin-bottom: 0.8em;
       }
    h4, h5, h6 {
-      font-size: 10px;
+      font-size: 0.75rem;
       }
    hr {
       margin: 2em 0;
@@ -431,7 +475,7 @@ html, body {
    aside:before {
       vertical-align: middle;
       padding-right: 0.5em;
-      font-size: 14px;
+      font-size: 0.9rem;
       &.notice {
          @extend %icon-info-sign;
          }
@@ -470,6 +514,9 @@ html, body {
       clear:right;
       box-sizing: border-box;
       text-shadow: 0px 1px 2px rgba(0,0,0,0.4);
+      position: relative;
+      top: -83px;
+      margin-bottom: -29px;
       @extend %right-col;
       &>p { margin: 0; }
       a {

@@ -1,0 +1,1 @@
+npm run build && rm -rf /srv/public/nlp.studio docs && mv /srv/nlp-studio-slate/build /srv/public/nlp.studio

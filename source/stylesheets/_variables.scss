@@ -23,12 +23,17 @@ under the License.
 
 // BACKGROUND COLORS
 ////////////////////
+$rem-font-size: 15px;
+// links
+$content-link-color: hsl(180, 100%, 35%);
+$nav-active-bg: hsl(180, 100%, 34%);
+$nav-link-color: white;
+// etc
 $nav-bg: #393939;
 $examples-bg: #393939;
 $code-bg: #292929;
 $code-annotation-bg: #1c1c1c;
 $nav-subitem-bg: #262626;
-$nav-active-bg: #2467af;
 $lang-select-border: black;
 $lang-select-bg: #222;
 $lang-select-active-bg: $examples-bg; // feel free to change this to blue or something
@@ -52,7 +57,7 @@ $lang-select-pressed-text: white; // color of language tab text when mouse is pr
 // SIZES
 ////////////////////
 $nav-width: 230px; // width of the navbar
-$examples-width: 50%; // portion of the screen taken up by code examples
+$examples-width: 40%; // portion of the screen taken up by code examples
 $logo-margin: 20px; // margin between nav items and logo, ignored if search is active
 $main-padding: 28px; // padding to left and right of content & examples
 $nav-padding: 15px; // padding to left and right of navbar
@@ -67,7 +72,7 @@ $phone-width: $tablet-width - $nav-width; // min width before reverting to mobil
 ////////////////////
 %default-font {
    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "微软雅黑", STXihei, "华文细黑", sans-serif;
-   font-size: 13px;
+   font-size: 1rem;
    }
 
 %header-font {
@@ -77,7 +82,7 @@ $phone-width: $tablet-width - $nav-width; // min width before reverting to mobil
 
 %code-font {
   font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
-  font-size: 12px;
+  font-size: 0.9rem;
   line-height: 1.5;
    }
 
