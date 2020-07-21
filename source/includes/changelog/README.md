@@ -13,7 +13,7 @@ No changes since the initial release.
 &nbsp;  
 ## Future versions  
   
-The documentation will be updated. You will be able to read about each version of the API. You can always view each version of the API at [RapidAPI](https://rapidapi.com/user/nlp-studio). Previous versions will continue to be supported for many years.  
+The documentation will be updated. You will be able to read about each version of the API. You'll also be able to view each version of the API at [RapidAPI](https://rapidapi.com/user/nlp-studio). Previous versions will continue to be supported for many years.  
   
 &nbsp;  
   

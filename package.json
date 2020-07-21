@@ -30,8 +30,9 @@
       "start": "gulp serve",
       "prebuild": "gulp clean",
       "build": "gulp build-static-site",
-      "postbuild": "gulp lint && gulp publish",
-      "deploy": "deploy.sh"
+      "postbuild": "rm -rf /srv/public/nlp.studio docs && cp -R /srv/nlp-studio-slate/build /srv/public/nlp.studio",
+      "deploy": "deploy.sh",
+      "backup_postbuild": "gulp lint && gulp publish"
    },
    "dependencies": {
       "browser-sync": "~2.26",

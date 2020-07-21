@@ -1,5 +1,19 @@
 # Products  
   
+We make business tools and linguistics APIs:  
+  
+* [**Best domain name suggestions**](https://rapidapi.com/nlp-studio/api/domain-name-search1) - most relevant, short, memorable, and available.  
+* [**Most accurate synonyms**](https://rapidapi.com/nlp-studio/api/nlp-thesaurus1), parts of speech, word info, and sentiment analysis.  
+  
+We also make websites and apps:  
+  
+* [**nlp.domains**](https://nlp.domains) - Find an available domain name for your business  
+* [**nlpthesaurus.com**](https://nlpthesaurus.com) - Thesaurus, word information, word sentiment  
+* [**paulshorey.com**](https://paulshorey.com) - See other software made by Paul Shorey  
+  
+&nbsp;  
+  
+  
 ## Domain Name Suggestions and Availability  
 ```javascript  
 /*  
@@ -62,8 +76,8 @@
   
 <!-- Very soon, you'll be able to send API requests directly from your client front-end code, without worrying about exposing your secret headers. We're working on an optional parameter called `captcha_response` and `site_id`. You'll very soon be able to register your site with us, and configure your Captcha options, and many other site preferences. -->  
   
-  
-  
+&nbsp;  
+&nbsp;  
   
   
   

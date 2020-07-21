@@ -2,10 +2,10 @@
 <html lang=en>
 
    <head>
-      <meta charset=utf-8>
-      <meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1">
+      <meta charset=utf-8/>
+      <meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1"/>
       <title><%= current_page.data.title || "API Documentation" %></title>
-      <link rel=icon href=images/bookmark.png>
+      <link rel=icon href=images/bookmark.png />
       <%- stylesheet_link_tag('screen', 'screen') %>
       <%- stylesheet_link_tag('print', 'print') %>
       <%- stylesheet_link_tag('highlight-' + current_page.data.highlight_theme, 'screen,print') %>
@@ -19,28 +19,28 @@
       </a>
 
       <div class=tocify-wrapper>
-         <a href="/"><%- image_tag('logo.png') %></a>
-         <% if (langs) { %>
-            <div class=lang-selector>
-               <% for(var i=0; i<langs.length; i++) { %>
-                  <a href=# data-language-name="<%= langs[i] %>"><%= langs[i] %></a>
-               <% } %>
-            </div>
-         <% } %>
-         <% if (current_page.data.search) { %>
-            <div class=search>
-               <input type=text class=search id=input-search placeholder="Search">
-            </div>
-            <ul class=search-results></ul>
-         <% } %>
+<!--         <a href="/"><%- image_tag('logo.png') %></a>-->
+<!--         <% if (langs) { %>-->
+<!--            <div class=lang-selector>-->
+<!--               <% for(var i=0; i<langs.length; i++) { %>-->
+<!--                  <a href=# data-language-name="<%= langs[i] %>"><%= langs[i] %></a>-->
+<!--               <% } %>-->
+<!--            </div>-->
+<!--         <% } %>-->
+<!--         <% if (current_page.data.search) { %>-->
+<!--            <div class=search>-->
+<!--               <input type=text class=search id=input-search placeholder="Search">-->
+<!--            </div>-->
+<!--            <ul class=search-results></ul>-->
+<!--         <% } %>-->
          <div id=toc></div>
-         <% if (current_page.data.toc_footers) { %>
-            <ul class=toc-footer>
-               <% for(var i=0; i<current_page.data.toc_footers.length; i++) { %>
-                  <li><%- current_page.data.toc_footers[i] %></li>
-               <% } %>
-            </ul>
-         <% } %>
+<!--         <% if (current_page.data.toc_footers) { %>-->
+<!--            <ul class=toc-footer>-->
+<!--               <% for(var i=0; i<current_page.data.toc_footers.length; i++) { %>-->
+<!--                  <li><%- current_page.data.toc_footers[i] %></li>-->
+<!--               <% } %>-->
+<!--            </ul>-->
+<!--         <% } %>-->
       </div>
 
       <div class=page-wrapper>
@@ -49,6 +49,45 @@
             <% for(var i=0; i<includes.length; i++) { %>
                <%- includes[i] %>
             <% } %>
+
+            <!--
+             begin CONTACT FORM
+             -->
+            <div class="contactContent">
+                <form id="submitSubscribeForm">
+                  <h3>Stay informed about new product releases:</h3>
+                  <div class="formContent">
+                     <fieldset>
+                        <input type="text" name="email" placeholder="Your email..." onChange="updateContactData('email',this.value)" />
+                     </fieldset>
+                     <button class="g-recaptcha" type="submit">Subscribe</button>
+                  </div>
+                  <div class="response"><p><sup>We include an instant "unsubscribe" link in all emails.</sup></p></div>
+                </form>
+
+                <form id="submitContactForm">
+                  <h3>Say hello:</h3>
+                  <div class="formContent">
+                     <fieldset>
+                        <input type="text" name="email" placeholder="Your email..." onChange="updateContactData('email',this.value)" />
+                     </fieldset>
+                     <fieldset>
+                        <input type="text" name="name" placeholder="Your name..." onChange="updateContactData('name',this.value)" />
+                     </fieldset>
+                     <fieldset>
+                        <textarea type="text" name="text" placeholder="Your message..." onChange="updateContactData('text',this.value)"></textarea>
+                     </fieldset>
+                     <button class="g-recaptcha" type="submit">Send</button>
+                  </div>
+                  <div class="response">
+                  </div>
+                </form>
+               <script>document.write('<p><sup>Or email <a href="mailto:paul@nlp.studio">paul@nlp.studio</a></sup></p>')</script>
+            </div>
+            <!--
+             end CONTACT FORM
+             -->
+
          </div>
          <div class=dark-box>
             <% if (langs) { %>
@@ -61,13 +100,147 @@
          </div>
       </div>
 
-      <%- javascript_include_tag('powr') %>
-
+      <!--
+         page nav, and pre style
+      -->
       <script>
-         // if (window.location.hash==='#about') {
-         //    window.location.href='#who-we-are';
-         // }
+         if (window.location.hash==='') {
+            window.location.href = '#about'
+         }
+         /*
+          * wrap each pre/blockquote (right side code example)
+          * in a div which will help it position:absolute and float independently of content
+          */
+         Array.from(document.querySelectorAll('pre, blockquote')).forEach(function(el) {
+            let wrapper = document.createElement('div');
+            wrapper.className='pre-wrapper'
+            el.parentNode.insertBefore(wrapper, el);
+            wrapper.appendChild(el);
+         });
       </script>
+
+      <!--
+         CONTACT FORM
+      -->
+      <script>
+         /*
+          * Browser support
+          */
+         if (navigator.userAgent.includes('MSIE') || navigator.appVersion.includes('Trident')) {
+            document.writeln('<p>Sorry, these forms do not support Internet Explorer. Please email <a href="mailto:paul@nlp.studio"><b>paul@nlp.studio</b></a></p>')
+         }
+
+         /*
+          * Contact data
+          */
+         let updateContactData = function (key,value) {
+            contactData[key] = value
+            if (key==='email') {
+               Array.from(document.querySelectorAll('form')).forEach(form=> {
+                  form['email'].value = value
+               })
+            }
+         }
+         let contactData = {
+            email:'',
+            name:'',
+            text:'',
+            updates_product:'',
+         }
+         /*
+          * POST Contact data
+          */
+         let putContactData = function(captcha_response) {
+            let postData = {
+               contact: contactData,
+               captcha_response
+            }
+            return fetch('http://localhost:1080/v1/contacts', {
+               method:'put',
+               mode: 'cors',
+               headers: {'Content-Type': 'application/json'},
+               body:JSON.stringify(postData)
+            })
+              .then(function(response) {
+                 return response.json();
+              })
+         }
+         /*
+          * Submit subscribe form
+          */
+         let subscribeForm = document.getElementById('submitSubscribeForm');
+         subscribeForm.addEventListener('submit', function(e) {
+            console.log('submitSubscribeForm',contactData);
+            e.preventDefault();
+            if (!contactData.email) {
+               subscribeForm.querySelector('.response').innerHTML = `
+                  <p class="error">Please enter your email address.</p>
+               `;
+               return
+            }
+            grecaptcha.ready(function() {
+               grecaptcha.execute('6LfSN-MUAAAAAOxMUojSlBxkicjSeX1YLW8ds8C1', { action: 'submit' }).then(function (token) {
+                  console.log('captcha_response', token);
+                  putContactData(token).then(function(data){
+                     if (data.error) {
+                        subscribeForm.querySelector('.response').innerHTML = `
+                           <p class="error">${data.error || 'Could not send. Something went wrong.'}</p>
+                        `;
+                     } else {
+                        subscribeForm.querySelector('.response').innerHTML = `
+                           <p class="success">Email saved.</p>
+                        `;
+                     }
+                     contactForm.querySelector('.response').innerHTML = ``
+                  })
+               });
+            });
+         });
+         /*
+          * Submit contact form
+          */
+         let contactForm = document.getElementById('submitContactForm');
+         contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            if (!contactData.email) {
+               contactForm.querySelector('.response').innerHTML = `
+                  <p class="error">Please enter your email address.</p>
+               `;
+               return
+            }
+            else if (!contactData.text) {
+               contactForm.querySelector('.response').innerHTML = `
+                  <p class="error">Please enter a message.</p>
+               `;
+               return
+            }
+            else if (!contactData.name) {
+               contactForm.querySelector('.response').innerHTML = `
+                  <p class="error">Please enter your name.</p>
+               `;
+               return
+            }
+            grecaptcha.ready(function() {
+               grecaptcha.execute('6LfSN-MUAAAAAOxMUojSlBxkicjSeX1YLW8ds8C1', { action: 'submit' }).then(function (token) {
+                  console.log('captcha_response',token);
+                  putContactData(token).then(function(data){
+                     if (data.error) {
+                        contactForm.querySelector('.response').innerHTML = `
+                           <p class="error">${data.error || 'Could not send. Something went wrong.'}</p>
+                        `;
+                     } else {
+                        contactForm.querySelector('.response').innerHTML = `
+                           <p class="success">Message sent. Thank you. We'll get back to you soon.</p>
+                        `;
+                     }
+                     subscribeForm.querySelector('.response').innerHTML = ``
+                  })
+               });
+            });
+         });
+      </script>
+
+      <script src="https://www.google.com/recaptcha/api.js?render=6LfSN-MUAAAAAOxMUojSlBxkicjSeX1YLW8ds8C1"></script>
    </body>
 
 </html>

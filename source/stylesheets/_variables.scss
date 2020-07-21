@@ -25,15 +25,15 @@ under the License.
 ////////////////////
 $rem-font-size: 15px;
 // links
-$content-link-color: hsl(180, 100%, 35%);
-$nav-active-bg: hsl(180, 100%, 34%);
-$nav-link-color: white;
+$content-link-color: hsl(93, 97%, 42%);
+$nav-link-color: hsl(95, 96%, 42%);
+$nav-link-color-dark: hsl(95, 94%, 42%);
+$nav-subitem-bg: transparent;
 // etc
 $nav-bg: #393939;
 $examples-bg: #393939;
 $code-bg: #292929;
 $code-annotation-bg: #1c1c1c;
-$nav-subitem-bg: #262626;
 $lang-select-border: black;
 $lang-select-bg: #222;
 $lang-select-active-bg: $examples-bg; // feel free to change this to blue or something
@@ -48,7 +48,7 @@ $search-notice-bg: lightcoral;
 // TEXT COLORS
 ////////////////////
 $main-text: #333; // main content text color
-$nav-text: white;
+$nav-text: #666;
 $nav-active-text: white;
 $lang-select-text: white; // color of unselected language tab text
 $lang-select-active-text: white; // color of selected language tab text
@@ -71,20 +71,21 @@ $phone-width: $tablet-width - $nav-width; // min width before reverting to mobil
 // FONTS
 ////////////////////
 %default-font {
-   font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "微软雅黑", STXihei, "华文细黑", sans-serif;
-   font-size: 1rem;
-   }
+  font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "微软雅黑", STXihei, "华文细黑", sans-serif;
+  font-size: 1rem;
+}
 
 %header-font {
   @extend %default-font;
   font-weight: bold;
-   }
+}
 
 %code-font {
-  font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
+  font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono",
+    "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
   font-size: 0.9rem;
   line-height: 1.5;
-   }
+}
 
 // OTHER
 ////////////////////
@@ -100,6 +101,6 @@ $search-box-border-color: #666;
 ////////////////////////////////////////////////////////////////////////////////
 // These settings are probably best left alone.
 %break-words {
-   word-break: break-all;
-   hyphens: auto;
-   }
+  word-break: break-all;
+  hyphens: auto;
+}

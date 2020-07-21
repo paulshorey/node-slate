@@ -114,13 +114,19 @@ const task = {
       return gulp.src('source/images/**/*')
          .pipe(gulp.dest('build/images'));
       },
-   buildJs: () => {
+   concatJs: () => {
       const config = readIndexYml();
       return gulp.src(jsFiles.libs.concat(config.search ? jsFiles.search : [], jsFiles.scripts))
-         .pipe(concat('all.js'))
-         .pipe(gulpIf(settings.compress, uglify()))
-         .pipe(gulp.dest('build/javascripts'));
-      },
+        .pipe(concat('all.js'))
+        .pipe(gulpIf(settings.compress, uglify()))
+        .pipe(gulp.dest('source/javascripts'));
+      // gulp.src('source/javascripts/**/*')
+      //   .pipe(gulp.dest('build/javascripts'));
+   },
+   buildJs: () => {
+      return gulp.src('source/javascripts/**/*')
+        .pipe(gulp.dest('build/javascripts'));
+   },
    buildCss: () => {
       return gulp.src('source/stylesheets/*.css.scss')
          .pipe(sass().on('error', sass.logError))
@@ -147,7 +153,8 @@ const task = {
       return mergeStream(
          task.buildFonts(),
          task.buildImages(),
-         task.buildJs(),
+        task.concatJs(),
+        task.buildJs(),
          task.buildCss(),
          task.addHighlightStyle(),
          task.buildHtml()
@@ -176,7 +183,7 @@ const task = {
       console.log(path.resolve('source'));
       },
    publishToDocs: () => {
-      // fs.mkdirSync('docs');
+      fs.mkdirSync('docs');
       fs.writeFileSync('docs/CNAME', 'node-slate.js.org\n');
       return gulp.src('build/**/*')
          .pipe(gulp.dest('docs'));
