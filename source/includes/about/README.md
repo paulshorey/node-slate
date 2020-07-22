@@ -1,28 +1,34 @@
 # About  
   
-We make business tools and linguistics analysis APIs for web and AI companies:  
+### We make business tools and linguistics APIs:  
   
-* [**Best domain name suggestions**](https://rapidapi.com/nlp-studio/api/domain-name-search1) - most relevant, short, memorable, and available.  
-* [**Most accurate synonyms**](https://rapidapi.com/nlp-studio/api/nlp-thesaurus1), parts of speech, word info, and sentiment analysis.  
+<p class="fullwidth">  
+<a href="https://rapidapi.com/nlp-studio/api/domain-name-search1"><strong>Best domain name suggestions</strong></a> - most relevant, short, memorable, and available.<br/>  
+<a href="https://rapidapi.com/nlp-studio/api/nlp-thesaurus1"><strong>Most accurate synonyms</strong></a>, parts of speech, word info, and sentiment analysis.  
+</p>  
   
-We also make websites and apps:  
+### We also make websites and apps:  
   
-* [**nlp.domains**](https://nlp.domains) - Find an available domain name for your business  
-* [**nlpthesaurus.com**](https://nlpthesaurus.com) - Thesaurus, word information, word sentiment  
-* [**paulshorey.com**](https://paulshorey.com) - See other projects, jobs, and ideas by Paul Shorey  
+[**nlp.domains**](https://nlp.domains) - Find an available domain name for your business  
+[**nlpthesaurus.com**](https://nlpthesaurus.com) - Thesaurus, word information, word sentiment  
+[**paulshorey.com**](https://paulshorey.com) - See other software made by Paul Shorey  
+  
+&nbsp;  
   
 ## Who we are  
   
-A husband and wife team, based in Kansas City, MO \(USA\). 👨🏼‍💻👩🏽‍💼  Combining our talents, we were able to make the world's best English language thesaurus. Paul built some advanced custom admin tools. Samira used them to comb through and edit thousands of words.  
+A husband and wife team, based in Kansas City, MO \(USA\). 👨🏼‍💻👩🏽‍💼 Combining our talents, we were able to make the world's best English language thesaurus. Paul built some advanced custom admin tools. Samira used them to comb through and edit thousands of words.  
   
-![We met in Utah. Love those mountains. Miss those sunsets!](/images/aboutus.jpg)  
+![We met in Utah. Love those mountains and sunsets!](/images/aboutus.jpg)\  
+⬆ We met in Utah. Love those mountains and sunsets!  
   
 **Paul Shorey** \([paulshorey.com](https://paulshorey.com)\) has been making websites and apps for 12 years. JavaScript, UI design, front-end, back-end, systems and databases. Paul has a BFA in fine art, but has embraced software development as his art medium of choice. Programming is creative, and very powerful. When not coding, he enjoys building light fixtures, growing microgreens, and doing adventure sports.  
   
-**Samira Ali** has a Bachelors in Sociology. She has worked at several non-profits, and has started many of her own initiatives. She has worked in tech and medicine as well. She speaks several languages, and has been a part of a very diverse range of cultures. Samira has been instrumental in editing the thesaurus words, including adding positive synonyms for traditionally negative words like "black". She's marked many of the synonyms as "negative" connotation, so we can filter them out if we want (like for the Domain Suggestions product). She's also been a great help with design guidance, user testing, and research.  
+**Samira Ali** has a Bachelors in Sociology. She has worked at several non-profits, and has started many of her own initiatives. She has worked in tech and medicine as well. She speaks several languages, and has been a part of a very diverse range of cultures. Samira has been instrumental in editing the thesaurus, including adding positive synonyms for traditionally negative words like "black". She also flagged many of the culturally "negative" words which IBM's and our own AI algorithms have missed.  
+  
 <!-- She is now starting medical school, to be a doctor and heal people! But she will still be around to give guidance and direction in the areas of language, user perception, and design. -->  
   
-We're both inspired by this crazy adventure that is life. Paul immigrated from Russia, and Samira is a refugee from Africa. We're thankful for where we are now, and are moving toward securing a prosperous future through hard work and the pursuit of excellence. Looking forward to meeting you.  
+We're both inspired by this crazy adventure that is life. Paul successfully immigrated from Russia, and Samira is a refugee from Africa. We're thankful for where we are now, and are moving toward securing a prosperous future through hard work and the pursuit of excellence. Looking forward to meeting you.  
   
 [Let's get in touch](#contact) \(virtually\). Currently looking for partners, mentors, and ofcourse clients.  
   
@@ -45,6 +51,3 @@ This venture is long-term. We'll continue to support it as long as we have custo
 Please try our APIs, and compare to other providers. You will not be disappointed.  
   
 If our APIs are not as good as what you're currently using, [please let us know](#contact). It will help us improve. Sometimes it may be a simple configuration which dramatically lowers or improves results for a particular use case. Thank you for your support and feedback!  
-  
-  
-  

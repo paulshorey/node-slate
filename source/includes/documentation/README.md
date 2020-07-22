@@ -39,7 +39,7 @@ You can now sign up for a free trial and send API requests immediately from thei
   
 Very soon, you'll be able to send API requests directly from your client front-end code, without worrying about exposing your secret headers. We're working on an optional parameter called `captcha_response` and `site_id`. You'll very soon be able to register your site with us, and configure your Captcha options, and many other site preferences.  
   
-In-depth documentation coming soon.  
+More in-depth documentation coming soon.  
   
   
 ## Domain Name availability and expiration  
