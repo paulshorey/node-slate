@@ -4,6 +4,9 @@ language_tabs:
   - javascript
 
 toc_footers:
+  - <span>Get notified of:</span>
+  - <a href="#contact">new product releases</a>
+  - <span>&nbsp;</span>
   - <span>APIs now available:</span>
   - <a class="li" href="https://rapidapi.com/user/nlp-studio" target="_blank">on RapidAPI</a>
   - <span>&nbsp;</span>
@@ -11,17 +14,20 @@ toc_footers:
   - <a href="https://nlp.domains" target="_blank">nlp.domains</a>
   - <a href="https://nlpthesaurus.com" target="_blank">nlpthesaurus.com</a>
   - <span>&nbsp;</span>
-  - <span>Occasional newsletter:</span>
-  - <a href="#contact">new product releases</a>
-  - <span>&nbsp;</span>
-  - <span>Say hello:</span>
-  - <a href="#contact" class="contact-bottom-right"><img class="svg" alt="send" src="/images/icon-send.svg" /> contact us</a>
+  - <span><img class="side-contact-icon" alt="send" src="/images/icon-send.svg" /> Say hello:</span>
+  - <a href="#contact">contact us</a>
 
 includes:
-  - about/README
   - products/README
-  - your-account/README
-  - changelog/README
+  - documentation/README
+  - documentation/domain/README
+  - documentation/domain/suggestions
+  - documentation/domain/availability
+  - documentation/domain/options
+  - documentation/word/README
+  - documentation/word/info
+  - documentation/word/breaking
+  - about/README
   - contact
 
 search: true

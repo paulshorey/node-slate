@@ -44,6 +44,7 @@ html {
 
 body {
   letter-spacing: 0.005rem;
+  border-left: solid 3px #2157b9;
 }
 
 a,
@@ -105,7 +106,18 @@ a:visited {
     height: 62px;
     margin: 0 auto;
   }
+  > .logo-subtitle {
+    font-size: 0.81rem;
+    color: rgba(255, 255, 255, 0.5);
+    position: relative;
+    top: -1.05rem;
+    left: 1rem;
+    font-weight: 600;
+    height: 0.75rem;
+    //display: none;
+  }
   & > .search {
+    display: none;
     position: relative;
     input {
       background: $nav-bg;
@@ -135,6 +147,7 @@ a:visited {
     margin-top: $logo-margin;
   }
   .search-results {
+    display: none;
     margin-top: 0;
     box-sizing: border-box;
     height: 0;
@@ -256,12 +269,10 @@ a:visited {
 #nav-button {
   span {
     display: block;
-    $side-pad: $main-padding / 2 - 8px;
-    padding: $side-pad $side-pad $side-pad;
-    background-color: rgba($main-bg, 0.7);
+    padding: 5px 5px 5px 7px;
+    background-color: #2157b9;
     transform-origin: 0 0;
     transform: rotate(-90deg) translate(-100%, 0);
-    border-radius: 0 0 0 5px;
   }
   padding: 0 1.5em 5em 0; // increase touch size area
   display: none;
@@ -269,7 +280,7 @@ a:visited {
   top: 0;
   left: 0;
   z-index: 100;
-  color: black;
+  color: white;
   text-decoration: none;
   font-weight: bold;
   opacity: 0.7;
@@ -413,6 +424,11 @@ a:visited {
     height: 62px;
     margin-right: 0;
     background: #f1f1f1;
+    white-space: nowrap;
+    @media (max-width: 700px) {
+      line-height: 66px;
+      height: 65px;
+    }
   }
   h1:first-child,
   div:first-child + h1 {
@@ -672,14 +688,20 @@ a:visited {
 /*
  * CONTACT FORMS
  */
+.topContact,
 .contactContent {
-  padding: 1rem 2rem;
+  padding: 2rem 2rem;
   min-height: calc(100vh - 85px - 2rem);
-  max-width: 500px;
+  max-width: 610px;
+  background: 0 0;
+  top: 0;
+  color: #333;
+  text-shadow: none;
+  margin: 0 auto;
   form {
     overflow: auto;
     padding: 0;
-    margin: 0 0 1rem;
+    margin: 0.5rem auto 2rem;
     h3 {
       margin-top: 1rem;
     }
@@ -707,21 +729,17 @@ a:visited {
       }
     }
   }
-
-  background: none;
-  top: 0;
-  color: #333;
-  text-shadow: none;
   button {
     background: $content-link-color;
     padding: 5px 14px 5px 15px;
-    box-shadow: 1px 1px 0 #666;
+    box-shadow: 1px 1px 0 #999;
     border-radius: 3px;
     border: none;
     color: white;
     font-size: 1rem;
     display: flex;
     align-items: center;
+    cursor: pointer;
     * {
       vertical-align: middle;
     }
@@ -738,6 +756,27 @@ a:visited {
     color: $content-link-color;
   }
 }
+.topContact {
+  width: auto;
+  text-align: left;
+  margin: 0;
+  padding: 0 0 0 1.5rem;
+  height: auto;
+  min-height: auto;
+  .formContent {
+    display: flex;
+    input,
+    button {
+      height: 1.75rem;
+      line-height: 1.75rem;
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+    }
+    input {
+      min-width: 240px;
+    }
+  }
+}
 
 /*
  * ETC
@@ -750,15 +789,15 @@ a:visited {
   color: green;
 }
 
-.contact-bottom-right {
-  display: flex;
-  align-items: center;
-  * {
-    vertical-align: middle;
-  }
-  img.svg {
-    height: 1rem;
-    margin-right: 0.5rem;
-    fill: white;
-  }
+img.side-contact-icon {
+  height: 1rem;
+  width: auto;
+  margin-right: 0.5rem;
+  fill: white;
+  vertical-align: 0;
+}
+
+.positionHigher {
+  position: relative;
+  top: -1rem;
 }
