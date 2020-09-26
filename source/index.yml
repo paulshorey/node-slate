@@ -7,26 +7,29 @@ toc_footers:
   - <span>Get notified of:</span>
   - <a href="#contact">new product releases</a>
   - <span>&nbsp;</span>
-  - <span>APIs now available:</span>
-  - <a class="li" href="https://rapidapi.com/user/nlp-studio" target="_blank">on RapidAPI</a>
+  - <span>API coming soon:</span>
+  - <a class="li" href="https://rapidapi.com/besta-domains/api/domain-name-search1" target="_blank">RapidAPI</a>
   - <span>&nbsp;</span>
   - <span>Try our apps:</span>
-  - <a href="https://nlp.domains" target="_blank">nlp.domains</a>
+  - <a href="https://besta.domains" target="_blank">besta.domains</a>
   - <a href="https://nlpthesaurus.com" target="_blank">nlpthesaurus.com</a>
   - <span>&nbsp;</span>
   - <span><img class="side-contact-icon" alt="send" src="/images/icon-send.svg" /> Say hello:</span>
+  - <a href="#about">about us</a>
   - <a href="#contact">contact us</a>
 
 includes:
-  - products/README
   - documentation/README
-  - documentation/domain/README
-  - documentation/domain/suggestions
-  - documentation/domain/availability
-  - documentation/domain/options
+  - documentation/get-domains/README
+  - documentation/get-domains/suggestions
+  - documentation/get-domains/availability
+  - documentation/set-domains/README
+  - documentation/set-domains/options
   - documentation/word/README
-  - documentation/word/info
   - documentation/word/breaking
+  - documentation/word/thesaurus-pos
+  - documentation/word/thesaurus-list
+  - documentation/word/word-info
   - about/README
   - contact
 

@@ -44,7 +44,6 @@ html {
 
 body {
   letter-spacing: 0.005rem;
-  border-left: solid 3px #2157b9;
 }
 
 a,
@@ -70,7 +69,8 @@ a:visited {
   left: 0;
   bottom: 0;
   width: $nav-width;
-  background-color: $nav-bg;
+  background: hsl(223deg, 88%, 55%);
+
   font-size: 1rem;
   font-weight: bold;
   display: flex;
@@ -106,7 +106,7 @@ a:visited {
     height: 62px;
     margin: 0 auto;
   }
-  > .logo-subtitle {
+  .logo-subtitle {
     font-size: 0.81rem;
     color: rgba(255, 255, 255, 0.5);
     position: relative;
@@ -116,11 +116,16 @@ a:visited {
     height: 0.75rem;
     //display: none;
   }
-  & > .search {
-    display: none;
+  .search-container {
+    min-height: 65px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.41rem;
+  }
+  .search {
+    //display: none;
     position: relative;
     input {
-      background: $nav-bg;
+      background: transparent;
       border-width: 0 0 1px 0;
       border-color: rgba(255, 255, 255, 0.5);
       padding: 6px 0 6px 22px;
@@ -147,7 +152,7 @@ a:visited {
     margin-top: $logo-margin;
   }
   .search-results {
-    display: none;
+    //display: none;
     margin-top: 0;
     box-sizing: border-box;
     height: 0;
@@ -198,31 +203,41 @@ a:visited {
     //currently selected ToC entry
     //border-top: solid 1px #222;
     //box-shadow: 0px 1px 0px $nav-active-shadow;
-    background-color: $nav-subitem-bg;
+    background-color: hsl(212deg, 68%, 72%);
     color: $nav-active-text;
+    padding: 3px 0;
   }
   // Subheaders are the submenus that slide open
   // in the table of contents.
   .tocify-item > a {
     //font-size: 1.125rem;
-    font-weight: normal;
+    //font-weight: normal;
   }
   .tocify-subheader {
     display: none; // tocify will override this when needed
     background-color: $nav-subitem-bg;
-    margin-bottom: 4px;
     font-weight: 500;
-    padding-bottom: 0.5rem;
-    padding-top: 0.375rem;
-    .tocify-item > a {
-      padding-left: $nav-padding + $nav-indent;
-      font-size: 0.9rem;
+    .tocify-item {
+      line-height: 2.2rem;
+      &:first-child {
+        padding-top: 5px;
+      }
+      &:last-child {
+        padding-bottom: 5px;
+      }
+      > a {
+        padding-left: $nav-padding + $nav-indent;
+        font-size: 0.9rem;
+      }
     }
     // for embossed look:
     //@include embossed-bg;
     & > li:last-child {
       box-shadow: none; // otherwise it'll overflow out of the subheader
     }
+  }
+  .tocify-header > .tocify-item.tocify-focus {
+    padding-bottom: 6px;
   }
   .toc-footer {
     padding: 1.5rem 0 2rem 0;
@@ -249,9 +264,6 @@ a:visited {
     }
   }
 }
-.tocify-header > .tocify-focus + .tocify-subheader {
-  margin-top: -6px;
-}
 .tocify-header > li > a {
   line-height: 2.25rem;
 }
@@ -262,17 +274,22 @@ a:visited {
   color: $nav-active-bg !important;
 }
 .tocify {
-  padding: 1rem 0 0.25rem;
+  padding: 0 0 0.25rem;
 }
 
 // button to show navigation on mobile devices
 #nav-button {
-  span {
-    display: block;
+  > span {
     padding: 5px 5px 5px 7px;
-    background-color: #2157b9;
+    //width: 53px;
+    display: block;
+    background-color: hsl(223deg, 88%, 55%);
     transform-origin: 0 0;
     transform: rotate(-90deg) translate(-100%, 0);
+    text-align: right;
+    //&::before {
+    //  content: " NAV";
+    //}
   }
   padding: 0 1.5em 5em 0; // increase touch size area
   display: none;
@@ -303,7 +320,7 @@ a:visited {
 ////////////////////////////////////////////////////////////////////////////////
 
 .page-wrapper {
-  margin-left: $nav-width;
+  margin-left: 234px;
   position: relative;
   z-index: 10;
   background-color: $main-bg;
@@ -331,6 +348,11 @@ a:visited {
   a,
   a:visited {
     color: $content-link-color;
+  }
+  .content {
+    > div {
+      padding-top: 0.5rem;
+    }
   }
 }
 
@@ -397,7 +419,6 @@ a:visited {
     padding: 0 $main-padding;
     box-sizing: border-box;
     display: block;
-    text-shadow: $main-embossed-text-shadow;
     @extend %left-col;
   }
   & > ul,
@@ -420,10 +441,10 @@ a:visited {
     margin-bottom: $h1-margin-bottom;
     margin-top: 2em;
     border-top: 1px solid #ddd;
-    line-height: 62px;
-    height: 62px;
+    line-height: 70px;
+    height: 65px;
     margin-right: 0;
-    background: #f1f1f1;
+    //background: hsl(210deg, 75%, 85%);
     white-space: nowrap;
     @media (max-width: 700px) {
       line-height: 66px;
@@ -575,7 +596,7 @@ a:visited {
     margin: -2px;
     border-radius: 4px;
     border: 1px solid #f7e633;
-    background: linear-gradient(to top left, #f7e633 0%, #f1d32f 100%);
+    //background: linear-gradient(to top left, #f7e633 0%, #f1d32f 100%);
   }
 }
 
@@ -690,7 +711,7 @@ a:visited {
  */
 .topContact,
 .contactContent {
-  padding: 2rem 2rem;
+  padding: 0 2rem 2rem 2rem;
   min-height: calc(100vh - 85px - 2rem);
   max-width: 610px;
   background: 0 0;
@@ -729,26 +750,6 @@ a:visited {
       }
     }
   }
-  button {
-    background: $content-link-color;
-    padding: 5px 14px 5px 15px;
-    box-shadow: 1px 1px 0 #999;
-    border-radius: 3px;
-    border: none;
-    color: white;
-    font-size: 1rem;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    * {
-      vertical-align: middle;
-    }
-    img.svg {
-      height: 1rem;
-      margin-right: 0.5rem;
-      fill: white;
-    }
-  }
   .response {
     color: #999;
   }
@@ -781,6 +782,43 @@ a:visited {
 /*
  * ETC
  */
+.action_button {
+  background: $content-link-color;
+  padding: 5px 14px 5px 15px;
+  box-shadow: 1px 1px 0 #999;
+  border-radius: 3px;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  * {
+    vertical-align: middle;
+  }
+  img.svg {
+    height: 1rem;
+    margin-right: 0.5rem;
+    fill: white;
+  }
+}
+.subtle_button {
+  padding: 5px 14px 5px 15px;
+  //box-shadow: 1px 2px 3px rgba(0,0,0,0.1);
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 0.5rem 1rem 0.5rem 0;
+  * {
+    vertical-align: middle;
+  }
+  img.svg {
+    height: 1rem;
+    margin-right: 0.5rem;
+    fill: white;
+  }
+}
 
 .error {
   color: red;
@@ -800,4 +838,9 @@ img.side-contact-icon {
 .positionHigher {
   position: relative;
   top: -1rem;
+}
+
+.content p > code {
+  white-space: nowrap;
+  padding: 5px 6px 3px 8px;
 }

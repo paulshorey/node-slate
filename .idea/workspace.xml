@@ -2,12 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="340e0b74-6694-43b3-a6ef-77d318bb6813" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/source/includes/documentation/get-domains/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/images/navbar.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/images/navbar.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/includes/about/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/includes/about/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/includes/contact.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/includes/contact.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/includes/documentation/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/includes/documentation/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/includes/documentation/domain/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/includes/documentation/domain/availability.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/includes/documentation/get-domains/availability.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/includes/documentation/domain/options.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/includes/documentation/set-domains/options.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/includes/documentation/domain/suggestions.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/includes/documentation/get-domains/suggestions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/includes/documentation/domain/whois.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/includes/documentation/word/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/includes/documentation/word/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/includes/documentation/word/breaking.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/includes/documentation/word/breaking.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/includes/documentation/word/info.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/includes/documentation/word/word-info.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/includes/products/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/includes/products/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/includes/your-account/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/includes/your-account/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/source/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/index.yml" beforeDir="false" afterPath="$PROJECT_DIR$/source/index.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/stylesheets/screen.css.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/stylesheets/screen.css.scss" afterDir="false" />
@@ -39,7 +47,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/source/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/source/includes/documentation/word" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -52,15 +60,17 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/source/includes/documentation/word" />
+      <recent name="$PROJECT_DIR$/source/includes/documentation/set-domains" />
+      <recent name="$PROJECT_DIR$/source/images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/source/includes/documentation/set-domains" />
       <recent name="$PROJECT_DIR$/source/includes/documentation/word" />
       <recent name="$PROJECT_DIR$/source/includes/documentation/domain" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/source/includes/documentation" />
-      <recent name="$PROJECT_DIR$/source/includes/about" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/source/images" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -103,7 +113,13 @@
       <workItem from="1597489708403" duration="647000" />
       <workItem from="1597718343161" duration="4444000" />
       <workItem from="1598489883611" duration="661000" />
-      <workItem from="1598552768866" duration="12702000" />
+      <workItem from="1598552768866" duration="15174000" />
+      <workItem from="1598644910030" duration="1159000" />
+      <workItem from="1600107685241" duration="1165000" />
+      <workItem from="1600192297635" duration="4587000" />
+      <workItem from="1600962511834" duration="4893000" />
+      <workItem from="1601143983222" duration="470000" />
+      <workItem from="1601144496579" duration="14182000" />
     </task>
     <servers />
   </component>
@@ -130,9 +146,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="511" y="382" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877/-567.-1057.2560.1057@0.23.1440.877" timestamp="1595013238681" />
-    <state x="422" y="189" width="596" height="544" key="find.popup" timestamp="1595355206643">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state x="183" y="-857" width="1060" height="656" key="find.popup" timestamp="1601161111960">
+      <screen x="-567" y="-1057" width="2560" height="1057" />
     </state>
+    <state x="183" y="-857" width="1060" height="656" key="find.popup/0.23.1440.877/-567.-1057.2560.1057@-567.-1057.2560.1057" timestamp="1601161111960" />
     <state x="422" y="189" width="596" height="544" key="find.popup/0.23.1440.877/-567.-1057.2560.1057@0.23.1440.877" timestamp="1595355206643" />
     <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1595342451657">
       <screen x="0" y="23" width="1440" height="877" />

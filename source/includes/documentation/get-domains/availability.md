@@ -10,11 +10,10 @@
 
 ```
 
-**API coming soon. [Contact us](#contact)** 
-
 - check the availability of 2000+ TLDs
 - check the expiration date for 1000+ TLDs
+- check if a domain is listed in a marketplace
 
-**Demo: [NLP.Domains](https://nlp.domains)**
-
-&nbsp;
+**Demo: [Besta.Domains](https://besta.domains)** \
+**More info [coming soon](#contact)** \
+&nbsp; 

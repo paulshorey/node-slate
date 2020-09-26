@@ -1,14 +1,14 @@
 # Products
 
-We do not lauch a product until it is the most reliable in the industry:
+<!-- This site contains documentation for our apps and APIs. Coming soon, interactive showcase of APIs, and an admin portal for clients. -->
 
 **[NLPThesaurus.com](https://nlpthesaurus.com) \
 Most _comprehensive, complete, extensive, exhaustive, sweeping, all encompassing, thorough_ reference for words and short phrases**. \
  Lookup synonyms, parts of speech, root, plural, abbreviation, acronym, and sentiment analysis.
 
-**[NLP.Domains](https://nlp.domains) \
+**https://besta.domains \
 Best domain name suggestions**. Finally, a decent generator. Returns the most relevant, short, memorable, and available domain names and TLDs. \
-It's hard to make a tool which actually generates new phrases. Read about [how we did it](https://nlp.domains#features). See [examples](https://nlp.domains#examples).
+It's hard to make a tool which actually generates new phrases. Read about [how we did it](https://besta.domains#features). See [examples](https://besta.domains#examples).
 
 <!-- <div class="topContact"> -->
 <!--   <form id="submitSubscribeForm"> -->

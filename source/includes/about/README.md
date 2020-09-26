@@ -1,11 +1,17 @@
-# About us
+# About
+
+## Our infrastructure
+
+Building websites for 12 years now, we've developed a state-of-the-art infrastructure and codebase. Our APIs are currently hosted in the USA East region, near NYC, for fast access to North America and Europe. We manage a cloud of load-balanced servers, ready to scale at any time. In the future, by client request, we will upgrade to a world-wide geo-distributed network - to be as close as possible to your servers and users - to provide the fastest and most reliable service!
+
+## Who we are
 
 A husband and wife team, based in Kansas City, MO \(USA\). 👨🏼‍💻👩🏽‍💼 Combining our talents, we were able to make the world's best English language thesaurus. Paul built some advanced custom admin tools. Samira used them to comb through and edit thousands of words.
 
 ![We met in Utah. Love those mountains and sunsets!](/images/aboutus.jpg)
 ⬆ We met in Utah. Love those mountains and sunsets!
 
-**Paul Shorey** \([paulshorey.com](https://paulshorey.com)\) has been making websites and apps for 12 years. JavaScript, UI design, front-end, back-end, systems and databases. Paul has a BFA in fine art, but has embraced software development as his art medium of choice. Programming is creative, and very powerful. When not coding, he enjoys building light fixtures, growing microgreens, and doing adventure sports.
+**Paul Shorey** \([paulshorey.com](https://paulshorey.com)\) has been making websites and apps for 12 years. JavaScript, UI design, front-end, back-end, systems and databases. Paul has a BFA in fine art, but has embraced software development as his medium of choice. Programming is creative, and very powerful. You can create something from nothing! When not coding, he enjoys building light fixtures, growing microgreens, and doing adventure sports.
 
 **Samira Ali** has a Bachelors in Sociology. She has worked at several non-profits, and has started many of her own initiatives. She has worked in tech and medicine as well. She speaks several languages, and has been a part of a very diverse range of cultures. Samira has been instrumental in editing the thesaurus, including adding positive synonyms for traditionally negative words like "black". She also flagged many of the culturally "negative" words which IBM's and our own AI algorithms have missed.
 
@@ -23,11 +29,11 @@ The reason this happened, is because in 2019, Paul set out to make a domain name
 
 It was a great learning experience, and now we have a database of 500,000 words, about 200,000 of which have good synonyms. As a reference, a native English speaker knows from 20,000 to 35,000 words, including slang. Many of the others are medical terms. We're currently brainstorming how this can be used in medical applications - perhaps to refine search results in sites like WebMD.
 
-We also ended up making by far the best domain name suggestion tool. Please try it: [https://nlp.domains](https://nlp.domains) or [use our API](https://rapidapi.com/user/nlp-studio). Our program generates hundreds of name phrases, and pairs them with the most relevant TLDs \(extensions\). There are currently 1000+ new TLD extensions which people don't even know exist, so this service is very useful. We then check for the status \(availability\) of each domain name. No more typing in one domain name at a time, and hoping that it's available. Our app gives you hundreds of similar names. Some of them turn out to be available and pretty good!
+We also ended up making by far the best domain name suggestion tool. Please try it: [https://besta.domains](https://besta.domains) or [use our API](https://rapidapi.com/user/nlp-studio). Our program generates hundreds of name phrases, and pairs them with the most relevant TLDs \(extensions\). There are currently 1000+ new TLD extensions which people don't even know exist, so this service is very useful. We then check for the status \(availability\) of each domain name. No more typing in one domain name at a time, and hoping that it's available. Our app gives you hundreds of similar names. Some of them turn out to be available and pretty good!
 
 ### It's improving every day!
 
-Our products were just published in July 2020. If you find anything broken, [please let us know](#contact). If you would like a feature or have any advice for us at all, please [contact us](#contact).
+Our products are new and rapidly improving. If you find anything broken, [please let us know](#contact). If you would like a feature or have any advice for us at all, please [contact us](#contact).
 
 This venture is long-term. We'll continue to support it as long as we have customers. It may take a long time to become successful. That's ok. This is a labor of love.
 
