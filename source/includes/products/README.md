@@ -2,7 +2,7 @@
 
 <!-- This site contains documentation for our apps and APIs. Coming soon, interactive showcase of APIs, and an admin portal for clients. -->
 
-**[NLPThesaurus.com](https://nlpthesaurus.com) \
+**[NLPThesaurus.com](https://wordio.co) \
 Most _comprehensive, complete, extensive, exhaustive, sweeping, all encompassing, thorough_ reference for words and short phrases**. \
  Lookup synonyms, parts of speech, root, plural, abbreviation, acronym, and sentiment analysis.
 

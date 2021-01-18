@@ -429,10 +429,32 @@ a:visited {
   & > h2,
   & > div {
     //tocify hidden div for placeholding stuff
-    clear: both;
+    //clear: both;
   }
   ul {
     margin-top: 0;
+  }
+  h1 > code {
+    display: inline-block;
+    position: relative;
+    top: -0.33rem;
+    left: 0.33rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  h1 + p > code {
+    display: inline-block;
+    position: relative;
+    top: -1.33rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  h2 + p > code {
+    display: inline-block;
+    position: relative;
+    top: -1.25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
   h1 {
     @extend %header-font;
@@ -442,7 +464,7 @@ a:visited {
     margin-top: 2em;
     border-top: 1px solid #ddd;
     line-height: 70px;
-    height: 65px;
+    height: 62px;
     margin-right: 0;
     //background: hsl(210deg, 75%, 85%);
     white-space: nowrap;
@@ -463,6 +485,7 @@ a:visited {
     border-top: 1px solid #ccc;
     padding-top: 1.2em;
     padding-bottom: 1.2em;
+    line-height: 29px;
     background-image: linear-gradient(
       to bottom,
       rgba(#fff, 0.4),
@@ -619,7 +642,7 @@ a:visited {
     text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
     position: relative;
     @media (min-width: $tablet-width - $nav-width + 1) {
-      top: -83px;
+      top: -126px;
       margin-bottom: -29px;
     }
     @extend %right-col;
@@ -803,13 +826,18 @@ a:visited {
   }
 }
 .subtle_button {
-  padding: 5px 14px 5px 15px;
-  //box-shadow: 1px 2px 3px rgba(0,0,0,0.1);
+  padding: 8px 18px 9px 19px;
   font-size: 1rem;
   display: flex;
   align-items: center;
   cursor: pointer;
-  margin: 0.5rem 1rem 0.5rem 0;
+  margin: 1rem 1rem 0.5rem 0;
+  background: #209fdf;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  //font-family: Quicksand, sans-serif;
   * {
     vertical-align: middle;
   }
@@ -843,4 +871,12 @@ img.side-contact-icon {
 .content p > code {
   white-space: nowrap;
   padding: 5px 6px 3px 8px;
+}
+
+.eapps-form-header-text {
+  z-index: 1000000;
+  position: relative;
+}
+.eapps-form-fieldset {
+  margin-top: 3rem !important;
 }

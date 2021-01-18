@@ -8,28 +8,20 @@ toc_footers:
   - <a href="#contact">new product releases</a>
   - <span>&nbsp;</span>
   - <span>API coming soon:</span>
-  - <a class="li" href="https://rapidapi.com/besta-domains/api/domain-name-search1" target="_blank">RapidAPI</a>
+  - <a class="li" href="https://rapidapi.com/besta-domains/api/domain-suggestions-tlds" target="_blank">RapidAPI</a>
   - <span>&nbsp;</span>
   - <span>Try our apps:</span>
   - <a href="https://besta.domains" target="_blank">besta.domains</a>
-  - <a href="https://nlpthesaurus.com" target="_blank">nlpthesaurus.com</a>
+  - <a href="https://wordio.co" target="_blank">wordio.co</a>
   - <span>&nbsp;</span>
   - <span><img class="side-contact-icon" alt="send" src="/images/icon-send.svg" /> Say hello:</span>
   - <a href="#about">about us</a>
-  - <a href="#contact">contact us</a>
+  - <a href="javascript:document.querySelector('.eapps-form-floating-button').click()">contact us</a>
 
 includes:
-  - documentation/README
-  - documentation/get-domains/README
   - documentation/get-domains/suggestions
   - documentation/get-domains/availability
-  - documentation/set-domains/README
-  - documentation/set-domains/options
-  - documentation/word/README
-  - documentation/word/breaking
-  - documentation/word/thesaurus-pos
-  - documentation/word/thesaurus-list
-  - documentation/word/word-info
+  - documentation/get-word/README
   - about/README
   - contact
 

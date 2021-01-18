@@ -2,19 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="340e0b74-6694-43b3-a6ef-77d318bb6813" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/source/includes/documentation/get-domains/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/includes/documentation/get-word/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/includes/about/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/includes/about/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/includes/contact.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/includes/contact.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/includes/changelog/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/includes/changelog/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/includes/documentation/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/includes/documentation/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/includes/documentation/domain/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/includes/documentation/domain/availability.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/includes/documentation/get-domains/availability.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/includes/documentation/domain/options.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/includes/documentation/set-domains/options.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/includes/documentation/domain/suggestions.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/includes/documentation/get-domains/suggestions.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/includes/documentation/domain/whois.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/includes/documentation/word/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/includes/documentation/word/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/includes/documentation/word/breaking.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/includes/documentation/word/breaking.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/includes/documentation/word/info.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/includes/documentation/word/word-info.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/includes/documentation/get-domains/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/includes/documentation/get-domains/availability.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/includes/documentation/get-domains/availability.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/includes/documentation/get-domains/suggestions.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/includes/documentation/get-domains/suggestions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/includes/documentation/set-domains/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/includes/documentation/set-domains/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/includes/documentation/set-domains/options.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/includes/documentation/set-domains/options.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/includes/documentation/word/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/includes/documentation/word/breaking.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/includes/documentation/word/thesaurus-list.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/includes/documentation/word/thesaurus-pos.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/includes/documentation/word/word-info.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/source/includes/products/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/includes/products/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/source/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/index.yml" beforeDir="false" afterPath="$PROJECT_DIR$/source/index.yml" afterDir="false" />
@@ -60,17 +63,17 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/source/includes/documentation/word" />
-      <recent name="$PROJECT_DIR$/source/includes/documentation/set-domains" />
-      <recent name="$PROJECT_DIR$/source/images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/source/includes/documentation/set-domains" />
       <recent name="$PROJECT_DIR$/source/includes/documentation/word" />
       <recent name="$PROJECT_DIR$/source/includes/documentation/domain" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/source/includes/documentation" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/source/includes/documentation/word" />
+      <recent name="$PROJECT_DIR$/source/includes/documentation/set-domains" />
+      <recent name="$PROJECT_DIR$/source/images" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -120,6 +123,22 @@
       <workItem from="1600962511834" duration="4893000" />
       <workItem from="1601143983222" duration="470000" />
       <workItem from="1601144496579" duration="14182000" />
+      <workItem from="1601673525520" duration="2099000" />
+      <workItem from="1602133563074" duration="3254000" />
+      <workItem from="1602311052352" duration="250000" />
+      <workItem from="1602311318536" duration="21417000" />
+      <workItem from="1602895750331" duration="598000" />
+      <workItem from="1602966188233" duration="156000" />
+      <workItem from="1603117663822" duration="1022000" />
+      <workItem from="1603128751623" duration="1970000" />
+      <workItem from="1603158608181" duration="464000" />
+      <workItem from="1603597493847" duration="875000" />
+      <workItem from="1604550304858" duration="1301000" />
+      <workItem from="1604983429512" duration="103000" />
+      <workItem from="1605070233148" duration="10186000" />
+      <workItem from="1606077677635" duration="425000" />
+      <workItem from="1610309432977" duration="3588000" />
+      <workItem from="1611007354424" duration="793000" />
     </task>
     <servers />
   </component>
@@ -142,15 +161,19 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="500" height="445" key="SwitcherDM/0.23.1440.877/-567.-1057.2560.1057@0.23.1440.877" timestamp="1594955214666" />
+    <state x="675" y="-911" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1602531727615">
+      <screen x="-567" y="-1057" width="2560" height="1057" />
+    </state>
+    <state x="675" y="-911" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1440.877/-567.-1057.2560.1057@-567.-1057.2560.1057" timestamp="1602531727615" />
     <state x="511" y="382" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1595013238681">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="511" y="382" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877/-567.-1057.2560.1057@0.23.1440.877" timestamp="1595013238681" />
-    <state x="183" y="-857" width="1060" height="656" key="find.popup" timestamp="1601161111960">
-      <screen x="-567" y="-1057" width="2560" height="1057" />
+    <state x="422" y="189" width="596" height="544" key="find.popup" timestamp="1603132255585">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="183" y="-857" width="1060" height="656" key="find.popup/0.23.1440.877/-567.-1057.2560.1057@-567.-1057.2560.1057" timestamp="1601161111960" />
-    <state x="422" y="189" width="596" height="544" key="find.popup/0.23.1440.877/-567.-1057.2560.1057@0.23.1440.877" timestamp="1595355206643" />
+    <state x="183" y="-857" width="1060" height="656" key="find.popup/0.23.1440.877/-567.-1057.2560.1057@-567.-1057.2560.1057" timestamp="1602676514141" />
+    <state x="422" y="189" width="596" height="544" key="find.popup/0.23.1440.877/-567.-1057.2560.1057@0.23.1440.877" timestamp="1603132255585" />
     <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1595342451657">
       <screen x="0" y="23" width="1440" height="877" />
     </state>

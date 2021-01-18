@@ -30,7 +30,7 @@
     "start": "gulp serve",
     "prebuild": "gulp clean",
     "build": "gulp build-static-site",
-    "postbuild": "rm -rf /srv/public/nlp.studio docs && cp -R /srv/nlp-studio-slate/build /srv/public/nlp.studio",
+    "pub": "rm -rf ./../public/nlp.studio && mv ./build ./../public/nlp.studio && cd ./../public && git add . && git commit -m 'nlp.studio documentation' && git push",
     "deploy": "deploy.sh",
     "backup_postbuild": "gulp lint && gulp publish"
   },
