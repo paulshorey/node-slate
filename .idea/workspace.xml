@@ -2,26 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="340e0b74-6694-43b3-a6ef-77d318bb6813" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/source/includes/documentation/get-word/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/includes/about/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/includes/about/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/includes/changelog/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/includes/changelog/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/includes/documentation/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/includes/documentation/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/includes/documentation/get-domains/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/source/includes/documentation/get-domains/availability.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/includes/documentation/get-domains/availability.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/includes/documentation/get-domains/suggestions.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/includes/documentation/get-domains/suggestions.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/includes/documentation/set-domains/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/includes/documentation/set-domains/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/includes/documentation/set-domains/options.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/includes/documentation/set-domains/options.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/includes/documentation/word/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/includes/documentation/word/breaking.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/includes/documentation/word/thesaurus-list.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/includes/documentation/word/thesaurus-pos.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/includes/documentation/word/word-info.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/includes/products/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/includes/products/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/includes/documentation/get-word/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/includes/documentation/get-word/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/source/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/index.yml" beforeDir="false" afterPath="$PROJECT_DIR$/source/index.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/stylesheets/screen.css.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/stylesheets/screen.css.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,17 +49,17 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/source/includes/documentation/set-domains" />
-      <recent name="$PROJECT_DIR$/source/includes/documentation/word" />
-      <recent name="$PROJECT_DIR$/source/includes/documentation/domain" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/source/includes/documentation" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/source/includes/documentation/word" />
       <recent name="$PROJECT_DIR$/source/includes/documentation/set-domains" />
       <recent name="$PROJECT_DIR$/source/images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/source" />
+      <recent name="$PROJECT_DIR$/source/images" />
+      <recent name="$PROJECT_DIR$/source/includes/documentation/set-domains" />
+      <recent name="$PROJECT_DIR$/source/includes/documentation/word" />
+      <recent name="$PROJECT_DIR$/source/includes/documentation/domain" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -138,7 +124,12 @@
       <workItem from="1605070233148" duration="10186000" />
       <workItem from="1606077677635" duration="425000" />
       <workItem from="1610309432977" duration="3588000" />
-      <workItem from="1611007354424" duration="793000" />
+      <workItem from="1611007354424" duration="1326000" />
+      <workItem from="1611093111427" duration="154000" />
+      <workItem from="1611353294961" duration="593000" />
+      <workItem from="1611526545317" duration="654000" />
+      <workItem from="1611617447641" duration="275000" />
+      <workItem from="1611620003015" duration="2797000" />
     </task>
     <servers />
   </component>

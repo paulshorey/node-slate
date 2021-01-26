@@ -87,13 +87,13 @@ let postData = {
 - check if a domain is available, unavailable, premium (set by registry), or premium (listed in aftermarket)
 - **check 100 domains at a time**, or upto 500 with contract
 
-### [Get it at RapidAPI](https://rapidapi.com/besta-domains/api/domain-availability-bulk)
+### [Get it at RapidAPI<span class="icon-external-link"></span>](https://rapidapi.com/besta-domains/api/domain-availability-bulk)
 
 - Subscribe and send API requests immediately
 - Test our data with no contract
 - API documentation and code samples
 
-### [Demo at Besta.Domains](https://besta.domains)
+### [Demo at Besta.Domains<span class="icon-external-link"></span>](https://besta.domains)
 
 - Use it to find an available domain name for your business
 - See our data/algorithms in action, without getting technical

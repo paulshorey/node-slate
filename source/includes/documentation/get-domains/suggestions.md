@@ -79,13 +79,13 @@ let requestData = {
 - special logic if the search term is a brand/name/tech/etc
 - reliable word breaking (parse user input without spaces)
 
-### [Get it at RapidAPI](https://rapidapi.com/besta-domains/api/domain-suggestions-tlds)
+### [Get it at RapidAPI<span class="icon-external-link"></span>](https://rapidapi.com/besta-domains/api/domain-suggestions-tlds)
 
 - Subscribe and send API requests immediately
 - Test our data with no contract
 - API documentation and code samples
 
-### [Demo at Besta.Domains](https://besta.domains)
+### [Demo at Besta.Domains<span class="icon-external-link"></span>](https://besta.domains)
 
 - Use it to find an available domain name for your business
 - See our data/algorithms in action, without getting technical
